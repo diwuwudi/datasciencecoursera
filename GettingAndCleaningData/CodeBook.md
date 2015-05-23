@@ -1,5 +1,7 @@
 CODEBOOK
 
+In this practice, we are using a dataset collected by some experiments performed using information obtained by mobile devices. The description of the experiments are as follows.
+
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 For each record it is provided:
@@ -38,22 +40,12 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The set of variables that were estimated from these signals are: 
+In this practice, we are only interested in the following two domains: 
 
 mean(): Mean value
 std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+
+Together there are 68 mean and standard deviation variables that are included in this study. 
+
+The purpose of this practice is to calculate the mean for the 68 variables for each subject and each activity. Thus, the outcome of this practice will help further studies that require averaged data concerning a specific subject or a specific activity conducted by a certain subject.
+
